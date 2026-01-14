@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+    <import resource="classpath:web-ctx.xml"/>
+    <import resource="classpath*:**/extra/*.xml"/>
+    <import resource="**/w?.xml"/>
+    <import resource="c1.xml"/>
+    <import resource="subdir/c2.xml"/>
+    <util:list id="web_list" value-type="java.lang.Object">
+        <ref bean="webModuleBean1_ctx1"/>
+        <ref bean="moduleDBean3_extra2"/>
+        <ref bean="webModuleBean1_w1"/>
+        <ref bean="webModuleBean2_w2"/>
+        <ref bean="webModuleBean1_c1"/>
+        <ref bean="webModuleBean1_c2"/>
+    </util:list>
+    <bean id="webModuleBean3" class="com.mytests.spring.app.WebModuleBean3">
+        <property name="id" value="webModuleWeb3_main"/>
+    </bean>
+</beans>

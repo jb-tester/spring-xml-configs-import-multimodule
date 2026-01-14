@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+    <!-- file: protocol should be supported -->
+    <import resource="file:C:/Users/petro/IdeaProjects/temp/spring-xml-configs-import-multimodule/app-module/src/main/java/com/mytests/spring/app/modApp_src1.xml"/>
+    <util:list id="list" value-type="java.lang.Object">
+        <ref bean="appBean1_src1"/>
+        <ref bean="appBean2_src1"/>
+        <ref bean="appBean3_src1"/>
+    </util:list>
+
+</beans>

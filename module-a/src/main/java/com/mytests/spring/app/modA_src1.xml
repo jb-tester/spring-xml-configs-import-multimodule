@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="moduleABean1_src1" class="com.mytests.spring.app.ModuleModuleABean1">
+
+        <property name="id" value="ModuleABean1_src1"/>
+    </bean>
+    <bean id="moduleABean2_src1" class="com.mytests.spring.app.ModuleModuleABean2">
+
+        <property name="id" value="ModuleABean2_src1"/>
+    </bean>
+    <bean id="moduleABean3_src1" class="com.mytests.spring.app.ModuleModuleABean3">
+
+        <property name="id" value="ModuleABean3_src1"/>
+    </bean>
+</beans>

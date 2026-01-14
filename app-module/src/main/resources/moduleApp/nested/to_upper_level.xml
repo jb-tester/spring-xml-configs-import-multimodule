@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+<import resource="../../sharedDir/*.xml"/>
+    <util:list id="list" value-type="java.lang.Object">
+        <!-- beans from this module should be available: -->
+        <ref bean="appBean1_shared1"/>
+        <ref bean="appBean2_shared1"/>
+        <ref bean="appBean3_shared2"/>
+    </util:list>
+</beans>
